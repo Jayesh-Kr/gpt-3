@@ -1,0 +1,1086 @@
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap'); 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif;
+}
+:root{
+    --text-color:#81AFDD;
+    --footer-bg:#031334;
+}
+body{
+    background: #040c18;
+    /* position: relative; */
+}
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+a{
+    text-decoration: none;
+}
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+.gradient__bg{
+        background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+   
+        background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+    
+       
+}
+.section__padding{
+    padding: 2rem 6rem;
+}
+.section__margin{
+    margin: 2rem 6rem;
+}
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gpt__top-box{
+  width: 70px;
+  height: 70px;
+  background-color: #FF4820;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+}
+.gpt__top-box i{
+  font-size: 30px;
+  color: #fff;
+}
+
+
+ /* ------------------  CODE OF THE CONTENT STARTS HERE ----------- */
+.gpt__navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gpt__navbar-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+.gpt__navbar-items_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4rem;
+}
+.gpt__navbar-items_logo img{
+    width: 62.56px;
+    height: 16.02px;
+}
+.gpt__navbar-items_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gpt__navbar-items_container p,
+.gpt__navbar-menu_container p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    line-height: 25px;
+}
+.gpt__navbar-items_container p a,
+.gpt__navbar-menu_container p a{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.gpt__navbar-signin,
+.gpt__navbar-menu_signin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gpt__navbar-signin p,
+.gpt__navbar-menu_signin p{
+    font-size: 18px;
+    color:#fff;
+    font-weight: 500;
+    line-height: 25px;
+    cursor: pointer;
+}
+.gpt__navbar-signin button,
+.gpt__navbar-menu_signin button{
+    background-color: #FF4820;
+    outline: none;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 1.5rem;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    color:#fff; 
+    cursor: pointer;
+}
+
+
+
+
+ /* --------------------------  NAVBAR FOR MOBILE DEVICES ----------------------------------- */
+  .gpt__navbar-menu{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    position:relative;
+  }
+  .gpt__navbar-menu i{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .gpt__navbar-menu_container{
+      /* display: flex; */
+      display: none;
+    position: absolute;
+    top:50px;
+    right: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+    min-width: 200px;
+    background-color: var(--footer-bg);
+    padding: 0 1rem;
+    border-radius: 5px;
+    box-shadow: 7px 7px 10px 2px rgb(0 0 0 / 50%);;
+  }
+  .gpt__navbar-menu_container p {
+    text-align: center;
+    border-bottom: 1px solid #555;
+    margin-top: 1rem;
+  }
+  .gpt__navbar-menu_signin{
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+
+  }
+  .gpt__navbar-menu_signin button{
+      padding: 0.8rem 2rem;
+      margin: 1rem 0;
+  }
+
+
+
+
+
+
+/* ------------------------------------ HEADER STYLE START HERE ----------------------------- */
+
+  .gpt__header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gpt__header-container_content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 4rem;
+    flex:1;
+  }
+  .gpt__header-container_content h1{
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+  }
+  .gpt__header-container_content p{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 1rem;
+  }
+  .gpt__header-container_content_email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .gpt__header-container_content_email input{
+    flex:2;
+    width: 100%;
+    min-height: 50px;
+    padding: 0 1rem;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    background: var(--footer-bg);
+  }
+  .gpt__header-container_content_email button{
+    flex:0.8;
+    width: 100%;
+    min-height: 50px;
+    padding: 0 1rem;
+    background-color: #FF4820;
+    outline: none;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color:#fff; 
+    cursor: pointer;
+  }
+  .gpt__header-container_content_people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .gpt__header-container_content_people img{
+    height: 38px;
+    width: auto;
+  }
+  .gpt__header-container_content_people p{
+    text-align: center;
+    font-size: 12px;
+    color:#fff;
+    margin-left: 1rem;
+    margin-top: 0;
+  }
+  .gpt__header-container_imgai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1.1;
+
+  }
+  .gpt__header-container_imgai img{
+    width: 100%;
+    height: 100;
+  }
+
+
+   /* ------------------------------------------ BRAND SECTION STYLE STARTS HERE --------------------------- */
+  .brand_section__padding{
+    padding:2rem 0;
+  }
+  .gpt__section-brand{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .gpt__section-brand div{
+    flex:1;
+    margin: 1rem;
+    max-width: 100px;
+    min-width: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gpt__section-brand div img{
+    width: 100%;
+    height: 100%;
+  } 
+
+
+
+  /* -------------------------------------- WHAT IS GPT SECTION STYLE STARTS HERE ------------------------ */
+
+
+  .gpt__section-wgpt_container{
+    background: -moz-radial-gradient(circle at 81% 86%, rgba(1, 58, 120, 1) 0%, rgba(4, 20, 43, 1) 100%);
+
+    background:-webkit-radial-gradient(circle at 81% 86%, rgba(1, 58, 120, 1) 0%, rgba(4, 20, 43, 1) 100%);
+
+    background:-o-radial-gradient(circle at 81% 86%, rgba(1, 58, 120, 1) 0%, rgba(4, 20, 43, 1) 100%);
+
+    background:-ms-radial-gradient(circle at 81% 86%, rgba(1, 58, 120, 1) 0%, rgba(4, 20, 43, 1) 100%);
+
+    background:radial-gradient(circle at 81% 86%, rgba(1, 58, 120, 1) 0%, rgba(4, 20, 43, 1) 100%);
+
+    padding: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .gpt__section-wgpt_container-box1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
+  .gpt_section-wgpt_container-box1_title{
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .gpt_section-wgpt_container-box1_title div{
+    width: 38px;
+    height: 3px;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+  }
+  .gpt_section-wgpt_container-box1_title h1{
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 75px;  
+    letter-spacing: -0.04em;
+    color:#fff;
+  }
+  .gpt__section-wgpt_container-box1 p{
+    flex:1;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color:var(--text-color)
+  }
+  .gpt__section-wgpt_container-box2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .gpt__section-wgpt_container-box2 h1{
+    flex:1;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    }
+    .gpt__section-wgpt_container-box2 p{
+    flex:1;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FF8A71;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    }
+    .gpt__section-wgpt_container-box3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    .gpt__section-wgpt_container-box3 p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        color:var(--text-color)
+    }
+    .gpt__section-wgpt_container-box3_1,
+    .gpt__section-wgpt_container-box3_2,
+    .gpt__section-wgpt_container-box3_3{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+    }
+    .gpt__section-wgpt_container-box3_2{
+        margin: 0 2rem;
+    }
+
+
+
+/* ----------------------  POSSIBILITY SECTION STYLE STARTS HERE ------------------------------- */
+
+
+    .gpt__possibility-container{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .gpt__possibility-container_text{
+        flex: 0.6;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .gpt__possibility-container_text h1{
+        font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    }
+    .gpt__possibility-container_text p{
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FF8A71;
+    }
+    .gpt__possibility-container_feature{
+        flex:1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 5rem;
+    }
+    .gpt__possibility-container_feature-box{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 1rem;
+    }
+    .gpt_possibility-container_feature_title{
+    flex:0.8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    }
+    .gpt_possibility-container_feature_title div{
+    width: 38px;
+    height: 3px;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+    }
+    .gpt_possibility-container_feature_title h1{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 37px;
+    letter-spacing: -0.04em;
+    color:#fff;
+    margin-top: 0.5rem;
+    }
+    .gpt__possibility-container_feature-box p{
+    flex:1;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #81AFDD;
+    margin-left: 2rem;
+    }
+
+
+
+  /* -----------------------------------  CTA SECTION STYLE STARTS HERE ------------------------------- */
+
+
+    .gpt__cta-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .gpt__cta-container_img{
+      flex:1;
+    }
+    .gpt__cta-container_img img{
+      width: 100%;
+      height: 100%;
+    }
+    .gpt__cta-container_content{
+      flex:1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-left: 2rem;
+    }
+    .gpt__cta-container_content p{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+      margin: 1rem 0;
+    }
+    .gpt__cta-container_content p:first-of-type{
+      color: #71E5FF;
+    }
+    .gpt__cta-container_content p:nth-last-of-type(2){
+      color:var(--text-color);
+      font-weight: 400;
+    }
+    .gpt__cta-container_content p:last-of-type{
+      color: #FF8A71
+    }
+    .gpt__cta-container_content h1{
+      font-weight: 800;
+      font-size: 34px;
+      line-height: 45px;
+      background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%), #FFFFFF;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .gpt__cta-getstarted{
+      padding: 4rem 3rem;
+    }
+    .gpt__cta-getstarted_container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+      border: 1px solid #000000;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      padding: 3rem;
+    }
+    .gpt__cta-getstarted_content{
+      flex:1;
+    }
+    .gpt__cta-getstarted_content p{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 30px;
+      color: #000;
+    }
+    .gpt__cta-getstarted_content h3{
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 45px;
+    }
+    .gpt__cta-getstarted_button{
+      flex: 0.8;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    .gpt__cta-getstarted_button button{
+      outline: none;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 30px;
+      padding: 1rem 1.5rem;
+      border-radius: 2rem;
+    }
+
+
+
+
+    /* ------------------------ BLOG SECTION STYLE STARTS HERE ---------------------------------- */
+
+
+    .gpt__blog-container{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;      
+    }
+    .gpt__blog-container h1{
+      font-weight: 800;
+      font-size: 58px;
+      line-height: 72px;
+      letter-spacing: -0.04em;
+      background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .gpt__blog-container_img{
+      display: flex;
+      justify-content: center;
+      gap:2rem;
+      margin-top: 2rem;
+    }
+    .gpt__blog-container_img-group1{
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .gpt__blog-container_img-group1_img img{
+      width: 100%;
+      height: 100%;
+    }
+    .gpt__blog-container_img-group1 .gpt__blog-container_img-group1_content{
+      height: 100%;
+    }
+    .gpt__blog-container_img-group1 .gpt__blog-container_img-group1_content div + p{
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    .gpt__blog-container_img-group1_content{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      background-color: var(--footer-bg);
+      padding: 1rem;
+      width: 100%;
+    }
+    .gpt__blog-container_img-group1_content-title{
+      flex: 1;
+    }
+    .gpt__blog-container_img-group1_content .gpt__blog-container_img-group1_content-title p{
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 35px;
+      color: #FFFFFF;
+    }
+    .gpt__blog-container_img-group1_content-title h2{
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 30px;
+      color:#fff;
+    }
+    .gpt__blog-container_img-group1_content p{
+      flex:1;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 35px;
+      color: #FFFFFF;
+    }
+    .gpt__blog-container_img-group2{
+      flex:2;
+      display: grid;
+      grid-template-columns: repeat(2 , 1fr);
+      gap:2rem;
+    }
+    .gpt__blog-container_img-group2_boxes .gpt__blog-container_img-group1_content div + p{
+      margin-top: 2rem
+    }
+
+
+
+    /* ------------------------------- FOOTER STYLE STARTS HERE -------------------------------- */
+
+    
+    .gpt__footer{
+      margin-top: 10rem;
+      background: var(--footer-bg);
+      padding: 4rem 4rem 0 4rem;
+    }
+    .gpt__footer-container{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .gpt__footer-container h1{
+      font-weight: 800;
+      font-size: 62px;
+      line-height: 75px;
+      text-align: center;
+      letter-spacing: -0.04em;
+      background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin: 3rem 6rem;
+    }
+    .gpt__footer-container_btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .gpt__footer-container_btn button {
+      background-color: var(--footer-bg);
+      border: 1px solid white;
+      outline: none;
+      padding: 1.5rem 2.5rem;
+      font-size: 16px;
+      color: #fff;
+    }
+    .gpt__footer-container_content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10rem;
+      width: 100%;
+    }
+    .gpt__footer-container_content-logo{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .gpt__footer-container_content-logo img{
+      width: 120px;
+    }
+    .gpt__footer-container_content-logo p{
+      margin-top: 2rem;
+      font-size: 12px;
+      line-height: 14px;
+      color: #FFFFFF;
+    }
+    .gpt__footer-container_content-links{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-left: 5rem;
+      gap:3rem;
+    }
+    .gpt__footer-container_content-links_box{
+      flex:1;
+      /* margin-left: 3rem; */
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .gpt__footer-container_content-links_box p:first-child{
+      font-size: 16px;
+      font-weight: 800;
+    }
+    .gpt__footer-container_content-links_box p{
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+    .gpt__footer-container_credit{      
+      margin-top: 6rem;
+    }
+    .gpt__footer-container_credit,
+    .gpt__footer-container_copywright{
+      margin-bottom: 2rem;
+      font-size: 14px;
+      color: #fff;
+      width: 100%;
+    }
+    #insta{
+      background:linear-gradient(90deg, rgba(158, 0, 255, 1) 0%, rgba(212, 0, 143, 1) 25%, rgba(212, 0, 29, 1) 47%, rgba(186, 212, 0, 1) 80%, rgba(130, 144, 238, 1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: underline cyan;
+      cursor:pointer;
+    }
+    #figma{
+      font-size: 14px;
+      color:pink;
+      font-weight: 500;
+      text-decoration: underline cyan;
+      cursor:pointer;
+    }
+    
+
+
+
+
+
+
+
+    @media screen and (max-width: 1285px){
+      .gpt__header-container_content{
+          margin-right: 1rem;
+      }
+    }
+  @media screen and (max-width: 1100px) {
+    .section__padding{
+        padding: 2rem 4rem;
+    }
+    .gpt__navbar-items_container{
+        display: none;
+    }
+    .gpt__navbar-menu{
+        display: flex;
+    }  
+    /* .gpt__navbar-menu_container p:last-of-type{
+        margin-bottom: 1rem;
+    } */
+    .gpt__header-container_content h1{
+        font-size: 45px;        
+        line-height: 60px;
+    }
+    .gpt__header-container_content p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .gpt__cta-getstarted_container {
+      padding: 1.5rem 3rem;
+    }
+  }
+
+
+  @media screen and (max-width: 1000px){
+    .gpt__header-container{
+        flex-direction: column;
+    }
+    .gpt__section-wgpt_container-box3{
+        flex-direction: column;
+    }
+    .gpt__section-wgpt_container-box3_2{
+        margin: 2rem 0;
+    }
+    .gpt__possibility-container{
+        flex-direction: column;
+    }
+    .gpt__possibility-container_feature{
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+    .gpt__footer-container_content-logo{
+      align-items: center;
+    }
+    .gpt__footer-container_content{
+      flex-direction: column;
+    }
+    .gpt__footer-container_content-links {
+      margin-left: 0;
+      margin-top: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 900px){
+    .gpt__blog-container h1{
+      font-size: 50px;
+      line-height: 65px;
+    }
+    .gpt__blog-container_img {
+      flex-direction: column-reverse;
+    }
+    .gpt__blog-container_img-group1 .gpt__blog-container_img-group1_content div + p{
+      margin-top: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 870px){
+    .gpt__cta-container{
+      flex-direction: column;
+    }
+    .gpt__cta-container_content{
+      margin-left: 0;
+    }
+    .gpt__cta-getstarted_container{
+      flex-direction: column;
+    }
+    .gpt__cta-getstarted_button{
+      margin-top: 2rem;
+    }
+    .gpt__cta-getstarted {
+      padding: 4rem 2rem;
+    }
+    .gpt__cta-getstarted_container {
+      align-items: flex-start;
+    }
+    .gpt__footer-container h1{
+      margin: 3rem;
+      font-size: 55px;
+      line-height: 70px;  
+    }
+  }
+
+  @media screen and (max-width: 700px){
+    .gpt__blog-container h1 {
+      font-size: 40px;
+      line-height: 60px;
+    }
+    .gpt__blog-container_img-group2 {
+      grid-template-columns: 1fr;
+    }
+    .gpt__blog-container_img-group1_content-title h2 {
+      font-size: 22px;
+    }
+    .gpt__footer-container h1 {
+      margin: 3rem 2rem;
+      font-size: 50px;
+      line-height: 68px;
+  }
+  }
+
+  @media screen and (max-width: 750px) {
+    .gpt__top-box{
+      right: 10px;
+      width: 65px;
+      height: 65px;
+    }
+    .gpt__navbar-signin button{
+        padding: 0.8rem 2rem;
+        margin-top: 2px;
+    }
+    .gpt__header-container_content_people{
+        flex-direction: column;
+    }
+    .gpt__header-container_content_people p{
+        margin-left: 0;
+        text-align: center;
+    }
+    .gpt__header-container_content_email input,
+    .gpt__header-container_content_email button{
+        min-height: 40px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .gpt__header-container_imgai{
+        margin-top: 1rem;
+    }
+    .gpt__section-wgpt_container-box2,
+    .gpt__section-wgpt_container-box1{
+        flex-direction: column;
+    }
+    .gpt__section-wgpt_container p{
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .gpt_section-wgpt_container-box1_title h1{
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .gpt__footer{
+      margin-top: 6rem;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .gpt__top-box{
+      width: 60px;
+      height: 60px;
+    }
+    .gpt__top-box i {
+      font-size: 25px;
+    }
+    .section__padding{
+        padding: 2rem;
+    }
+    .gpt__navbar-signin{
+        display: none;
+    }
+    .gpt__navbar-menu_signin{
+        display: flex;
+    }
+    .gpt__navbar-menu_container{
+        top:30px;
+    }
+    .gpt__header-container_content h1{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .gpt__header-container_content p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .gpt__header-container_content_email button{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .gpt__possibility-container_feature-box{
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+    .gpt__possibility-container_feature-box p{
+        margin-left: 0;
+        margin-top: 1rem;
+        font-size: 16px;
+    }
+    .gpt__cta-container_content p{
+      font-size: 14px;
+      line-height: 25px;
+    }
+    .gpt__cta-container_content h1{
+      font-size: 30px;
+      line-height: 40px;
+    }
+    .gpt__cta-getstarted_container{
+      padding: 1.5rem 2rem;
+    }
+    .gpt__cta-getstarted_content h3 {
+      font-size: 22px;
+      line-height: 35px;
+    }
+    .gpt__cta-getstarted_button {
+      margin-top: 1rem;
+    }
+    .gpt__cta-getstarted_button button {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 25px;
+    }
+    .gpt__blog-container h1 {
+      font-size: 35px;
+      line-height: 50px;
+    }
+    .gpt__footer-container h1 {
+      margin: 3rem 0rem;
+      font-size: 40px;
+      line-height: 60px;
+      text-align: left;
+    }
+  .gpt__footer-container_btn button {
+    padding: 1rem 1.5rem;
+    font-size: 14px;
+    }
+  .gpt__footer-container_content-logo{
+      align-items: flex-start;
+    }
+    .gpt__footer-container_content{
+      align-items: flex-start;
+      margin-top: 6rem;
+    }
+    .gpt__footer-container_content-links{
+      flex-direction: column;
+    }
+    .gpt__footer-container_content-links_box {
+      gap:1rem
+    }
+  }
+
+  @media screen and (max-width: 280px){
+    .section__padding{
+      padding: 2rem 1rem;
+    }
+    .gpt__footer-container h1 {
+      font-size: 32px;
+      line-height: 45px;
+  }
+  }
+
+ 
